@@ -1,0 +1,184 @@
+body {
+    background: white;
+
+    /* Margin and centering */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+    /* Text styling */
+    font-family: Roboto, sans-serif;
+}
+
+/* Centering sections */
+body > * {
+    max-width: 64rem;
+    margin: auto;
+}
+
+/* -------------- links --------------- */
+a {
+    color: #0F0F0F;
+    font-style: italic;
+    //text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover {
+    filter: opacity(80%);
+}
+
+.brand-logo {
+    text-decoration: none;
+}
+
+.brand-logo > img {
+    /* These rules mirror those of font awesome */
+    display: inline-block !important;
+    width: 1.2em !important;
+    height: 1.2em !important;
+    border: none !important;
+    border-radius: 0% !important;
+    vertical-align: -.125em !important;
+    overflow: visible;
+}
+
+/* --------------- TOP ---------------- */
+#top {
+    text-align: center;
+}
+
+#top img {
+    max-width: 42rem;
+
+    display: block;
+    margin: auto;
+}
+
+#top .links {
+    margin-top: 1rem;
+}
+
+#top .links a {
+    font-size: 2rem;
+    margin: 0.3rem;
+}
+
+/* ------------ SECTIONS -------------- */
+h1,
+h2,
+h3 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-size: 2.1rem;
+    overflow: hidden;
+}
+
+h2:before,
+h2:after {
+    background-color: #000000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+/* -------------- TALKS --------------- */
+.talk {
+    text-aligt: left;
+    margin-top: 0.8rem;
+}
+
+.talk h4 {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    font-size: 1.5rem;
+}
+
+.talk .links {
+    display: inline-block;
+}
+
+.talk .aux-link {
+    text-decoration: none;
+    margin-right: 0.2rem;
+}
+
+.talk .aux-link > img {
+    /* These rules mirror those of font awesome */
+    display: inline-block !important;
+    width: 1.2em !important;
+    height: 1.2em !important;
+    border: none !important;
+    border-radius: 0% !important;
+    vertical-align: -.125em !important;
+    overflow: visible;
+}
+
+.talk .aux-link.fb-event {
+    margin-right: 1.5rem;
+}
+
+.talk dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+.talk dt {
+    display: inline-block;
+    font-weight: bold;
+    width: 6rem;
+}
+.talk dt:after {
+    content: ":";
+}
+.talk dt img {
+    /* These rules mirror those of font awesome */
+    display: inline-block !important;
+    width: 0.8em !important;
+    height: 0.8em !important;
+    border: none !important;
+    border-radius: 0% !important;
+    vertical-align: -.125em !important;
+    overflow: visible;
+}
+
+.talk dd {
+    display: inline-block;
+    margin: 0;
+    width: calc(100% - 6rem);
+}
+
+.talk details summary {
+    font-weight: bold;
+}
+
+/* -------------- FOOTER -------------- */
+footer {
+    border-top: double;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+}
