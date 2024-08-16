@@ -1,0 +1,62 @@
+\documentclass{article}
+
+% Page Style
+\pagestyle{empty}
+\usepackage[a4paper,margin=2cm]{geometry}
+
+% Images
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+
+% Add Fontawesome icons
+\usepackage{fontawesome5}
+
+\usepackage{lipsum}
+
+% ------------------------------------------------------------------------------------------------ %
+\input{settings.tex}
+
+\begin{document}
+\centering
+  % -------------------------------------------------------------------------------------------- %
+  % Banner
+  \includegraphics[width=1\textwidth]{banner.jpg}
+
+  % -------------------------------------------------------------------------------------------- %
+  % Title
+  \vspace{20pt}
+  { \bf\Huge
+
+    \get{title}
+  }
+
+  % -------------------------------------------------------------------------------------------- %
+  % Speaker, Date and Location
+  \vspace{40pt}
+  { \LARGE
+
+    \begin{tabular}{cll}
+      \faIcon{user}       & {\bf Speaker:}    & \get{speaker}
+      \\
+      \faIcon{calendar}   & {\bf Date:}       & \get{date}
+      \\
+      \faIcon{map-marker} & {\bf Location:}   & \get{location}
+    \end{tabular}
+  }
+
+  % -------------------------------------------------------------------------------------------- %
+  % Abstract
+  \vspace{40pt}
+  {\bf\LARGE Abtract}
+  \vspace{10pt}
+
+  \begin{minipage}{0.8\linewidth}
+    % Indentation and Font Size
+    \setlength{\parindent}{1.5em}
+    \Large
+
+    % Contents:
+
+    \get{abstract}
+  \end{minipage}
+\end{document}

@@ -1,0 +1,35 @@
+\usepackage{pgfkeys}
+
+\newcommand{\declare}[1]{%
+  \pgfkeys{
+    /variables/#1.is family,
+    /variables/#1.unknown/.style = {\pgfkeyscurrentpath/\pgfkeyscurrentname/.initial = ##1}
+  }%
+}
+
+\declare{}
+
+% -------------------------------------------------------------------------------------------------- %
+\newcommand{\set}[2]{\pgfkeys{/variables/#1={#2}}}
+
+% NOTE: The ',' symbol needs to be "escaped" by wrapping it in '{' and '}', i.e. by writing '{,}'.
+
+\set{title}    {Anagram Tree}
+\set{speaker}  {Steffan Christ S{\o}lvsten}
+\set{date}     {16:15{,} 28\textsuperscript{th} of August{,} 2024}
+\set{location} {5335-184 (Nygaard)}
+
+\set{abstract} {
+
+  The Anatree (Anagram Tree) allows one to solve constraint satisfaction problems where the order of
+  the symbols in each word does not matter. What makes it unique is that the complexity of each
+  operation on this data structure only depends on the number of symbols in the alphabet and the
+  length of each word rather than the size of the data structure itself.
+
+  I want to show the fundamental design of the Anatree{,} the elegant recursive operations on it{,}
+  and how it is used in practice.
+
+}
+
+% -------------------------------------------------------------------------------------------------- %
+\newcommand{\get}[1]{\pgfkeysvalueof{/variables/#1}}

@@ -1,0 +1,41 @@
+\documentclass{article}
+
+% Page Style
+\pagestyle{empty}
+\usepackage[paperwidth=16cm, paperheight=9cm]{geometry}
+
+% Images
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+
+% Add Fontawesome icons
+\usepackage{fontawesome5}
+
+% ------------------------------------------------------------------------------------------------ %
+\input{settings.tex}
+
+\begin{document}
+\centering
+  % -------------------------------------------------------------------------------------------- %
+  % Banner
+  \includegraphics[width=0.9\textwidth]{banner.jpg}
+
+  % -------------------------------------------------------------------------------------------- %
+  % Title
+  \vspace{10pt}
+  { \bf\Large \get{title} }
+
+  % -------------------------------------------------------------------------------------------- %
+  % Speaker, Date and Location
+  \vspace{20pt}
+  { \large
+
+    \begin{tabular}{cll}
+      \faIcon{user}       & {\bf Speaker:}    & \get{speaker}
+      \\
+      \faIcon{calendar}   & {\bf Date:}       & \get{date}
+      \\
+      \faIcon{map-marker} & {\bf Location:}   & \get{location}
+    \end{tabular}
+  }
+\end{document}

@@ -1,0 +1,30 @@
+# =======================
+# LaTeX
+# =======================
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.bak
+*.bcf
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.vrb
+*.tdo
+*.toc
+*.xml
+*.pdf
+
+# =======================
+# Emacs
+# =======================
+
+*.el
+*.tex~
