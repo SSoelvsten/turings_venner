@@ -48,6 +48,36 @@
           <dt><img src="font_awesome/location.svg" /> Location</dt>
           <dd> 5335-016 (Peter Bøgh Auditoriet, Nygaard) </dd>
         </dl>
+
+        <details>
+          <summary>Abstract</summary>
+
+          <p>
+            When collaborating on a codebase where several people are working in
+            parallel on different development branches, it often happens
+            that different developers try to edit the same piece of code, which
+            leads to problems when both branches have to be merged into the
+            main codebase.
+
+            <br/>
+
+            If git is used to collaborate on the codebase, the first developer to
+            merge the branch has an easy day, and the other developer is met
+            with a merge conflict, which is the technical term used when git was
+            unable to automatically integrate the two sets of changes together.
+
+            <br/>
+
+            In this talk, we present a way of thinking about codebase changes
+            that lets us handle merge conflicts in a novel way that is much less
+            of a hair-pulling frustrating experience. By using this new way of
+            thinking, we then develop a new mechanical way to work with branches
+            that makes it easy to split off "refactoring work" from "feature
+            work", such that refactors can be merged early, thus reducing the
+            incidence of merge conflicts.
+
+          </p>
+        </details>
       </div>
 
       <div class="talk">
