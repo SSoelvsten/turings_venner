@@ -65,6 +65,10 @@ a:hover {
     margin: 0.3rem;
 }
 
+#top .mail {
+    margin-top: 0.5rem;
+}
+
 /* ------------ SECTIONS -------------- */
 h1,
 h2,
